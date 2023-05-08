@@ -6,12 +6,12 @@ from torch.utils.data import DataLoader
 from torchvision.datasets import ImageFolder
 from torchvision import transforms as T
 from pathlib import Path
-from utils import train_step, test_step, save_model, set_seed
+from utils import train_step, test_step, save_model, set_seeds
 from model import model_transference
 
 
 # Seed
-set_seed(42)
+set_seeds(42)
 
 # Hardware
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'

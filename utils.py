@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 
-def set_seed(seed: int=42):
+def set_seeds(seed: int=42):
     """Set Seed"""
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
