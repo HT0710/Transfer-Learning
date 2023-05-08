@@ -5,6 +5,13 @@ import torch.optim as optim
 from pathlib import Path
 
 
+
+def set_seed(seed: int=42):
+    """Set Seed"""
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+
+
 def train_step(
         model: nn.Module,
         dataloader: DataLoader,
